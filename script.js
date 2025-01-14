@@ -7,7 +7,7 @@ let image = document.querySelector("#image img"); // Image preview element
 let imageinput = document.querySelector("#image input"); // Hidden file input for image uploads
 
 // API endpoint for generating chatbot responses
-const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyD96xi9YTTwtRnJQu6vJdCl2LPTxJ8BFE4";
+const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyA-fDWeNJo7s1rNy12e5Y3Z1OAZOElo3FQ";
 
 
 // Object to store user input (text message and optional file data)
