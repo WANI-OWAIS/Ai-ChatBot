@@ -3,19 +3,26 @@
 
 A modern, responsive AI chatbot web application powered by Google's Gemini AI model. This chatbot supports both text and image inputs, providing intelligent responses in real-time.
 
+## 🌟 Live Demo
+**[Try the ChatBot Live](https://wani-owais.github.io/Ai-ChatBot/)**
+
 ## Features
 
-- 💬 **Text Chat**: Send messages and receive AI-powered responses  
-- 🖼️ **Image Support**: Upload and analyze images with AI  
-- 🎨 **Modern UI**: Clean, responsive design with smooth animations  
-- ⚡ **Real-time**: Instant responses with loading indicators  
-- 📱 **Mobile Friendly**: Works seamlessly on all devices  
+- 💬 **Text Chat**: Send messages and receive AI-powered responses
+- 🖼️ **Image Support**: Upload and analyze images with AI
+- 🎨 **Modern UI**: Clean, responsive design with smooth animations
+- ⚡ **Real-time**: Instant responses with loading indicators
+- 📱 **Mobile Friendly**: Works seamlessly on all devices
 
-## Demo
+## Screenshots
 
-![AI ChatBot Interface](screenshot.png) *(Add a screenshot of your chatbot)*
+### Main Interface
+![AI ChatBot Interface](https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/interface.png)
 
-## Technologies Used
+### Chat Example
+![Chat Conversation](https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/chat.png)
+
+*Real screenshots of the AI ChatBot in action*## Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)  
 - **AI Model**: Google Gemini 1.5 Flash  
@@ -83,20 +90,27 @@ Set environment variables on your host:
 
 ```
 ai-chatbot/
-├── index.html
-├── style.css
-├── script.js
-├── config.js
-├── .env
-├── .env.example
-├── .gitignore
-├── README.md
+├── index.html              # Main HTML file
+├── style.css               # Stylesheet
+├── script.js               # Main JavaScript functionality
+├── config.js               # Development configuration
+├── config.production.js    # Production configuration
+├── env-loader.js           # Environment loader for development
+├── .env                    # Environment variables (not in repo)
+├── .env.example            # Environment variables template
+├── .gitignore              # Git ignore rules
+├── README.md               # This file
 └── assets/
-    ├── ai.png
-    ├── user.png
-    ├── img.svg
-    ├── submit.svg
-    └── loading.webp
+    ├── avatars/
+    │   ├── ai.png          # AI avatar image
+    │   └── user.png        # User avatar image
+    ├── icons/
+    │   ├── img.svg         # Image upload icon
+    │   ├── submit.svg      # Submit button icon
+    │   └── loading.webp    # Loading animation
+    └── screenshots/
+        ├── interface.png   # Main interface screenshot
+        └── chat.png        # Chat conversation example
 ```
 
 ## Usage

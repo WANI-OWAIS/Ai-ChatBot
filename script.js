@@ -63,7 +63,7 @@ async function generateResponse(aiChatBox) {
         // Scroll chat to the latest message
         chatContainer.scrollTo({ top: chatContainer.scrollHeight, behavior: 'smooth' });
         // Reset image preview and file data
-        image.src = `img.svg`;
+        image.src = `assets/icons/img.svg`;
         image.classList.remove("choose");
         user.file = {};
     }
@@ -82,7 +82,7 @@ function handleChatResponse(userMessage) {
     user.message = userMessage; // Set the user's message
     // Create the user chat box HTML
     let html = ` 
-    <img src="user.png" alt="" id="userImage" width="8%">
+    <img src="assets/avatars/user.png" alt="" id="userImage" width="8%">
     <div class="user-chat-area">
     ${user.message}
     ${user.file.data ? `<img src="data:${user.file.mime_type};base64,${user.file.data}" class="chooseimg" />` : ""}
@@ -96,9 +96,9 @@ function handleChatResponse(userMessage) {
     setTimeout(() => {
         // Create the AI chat box HTML
         let html = `
-        <img src="ai.png" alt="" id="aiImage" width="10%">
+        <img src="assets/avatars/ai.png" alt="" id="aiImage" width="10%">
         <div class="ai-chat-area">
-        <img src="loading.webp" alt="" class="load" width="50px"> <!-- Loading indicator -->
+        <img src="assets/icons/loading.webp" alt="" class="load" width="50px"> <!-- Loading indicator -->
         </div>`;
         let aiChatBox = createChatBox(html, "ai-chat-box"); // Create AI chat box
         chatContainer.appendChild(aiChatBox); // Append AI chat box to the container
