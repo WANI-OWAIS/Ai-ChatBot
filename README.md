@@ -14,15 +14,7 @@ A modern, responsive AI chatbot web application powered by Google's Gemini AI mo
 - ⚡ **Real-time**: Instant responses with loading indicators
 - 📱 **Mobile Friendly**: Works seamlessly on all devices
 
-## Screenshots
-
-### Main Interface
-![AI ChatBot Interface](https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/interface.png)
-
-### Chat Example
-![Chat Conversation](https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/chat.png)
-
-*Real screenshots of the AI ChatBot in action*## Technologies Used
+## Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)  
 - **AI Model**: Google Gemini 1.5 Flash  
@@ -130,11 +122,17 @@ ai-chatbot/
 
 ## 🖼️ App Preview
 
-### 🔹 AI ChatBot Interface
-
+### 🔹 Main Interface
 <p align="center">
-  <img src="./screenshot.png" alt="AI ChatBot Screenshot" width="800"/>
+  <img src="https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/interface.png" alt="AI ChatBot Interface" width="800"/>
 </p>
+
+### 🔹 Chat Example
+<p align="center">
+  <img src="https://raw.githubusercontent.com/WANI-OWAIS/Ai-ChatBot/main/assets/screenshots/chat.png" alt="Chat Conversation Example" width="800"/>
+</p>
+
+*Real screenshots of the AI ChatBot in action*
 
 
 ## Contributing
