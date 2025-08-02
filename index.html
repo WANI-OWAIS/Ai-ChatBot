@@ -30,8 +30,25 @@
         <button id="submit"><img src="submit.svg" alt=""></button>
     </div>
 
-    <script src="env-loader.js"></script>
-    <script src="config.js"></script>
+    <!-- Use production config for GitHub Pages, dev config for local -->
+    <script>
+        // Check if running on GitHub Pages
+        if (window.location.hostname.includes('github.io')) {
+            // Load production config
+            const script = document.createElement('script');
+            script.src = 'config.production.js';
+            document.head.appendChild(script);
+        } else {
+            // Load development config
+            const envScript = document.createElement('script');
+            envScript.src = 'env-loader.js';
+            document.head.appendChild(envScript);
+            
+            const configScript = document.createElement('script');
+            configScript.src = 'config.js';
+            document.head.appendChild(configScript);
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 

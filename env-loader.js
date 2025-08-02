@@ -1,26 +1,23 @@
 // Simple environment loader for development
-// This script helps load environment variables in development
+// This script helps load API key for browser-based applications
 
-// For development: Load API key from localStorage or prompt user
+// For local development: Set the API key directly
 function loadDevelopmentConfig() {
-    let apiKey = localStorage.getItem('GEMINI_API_KEY');
+    // For local development, we'll set the API key directly
+    // In a real production environment, this should be handled server-side
+    const apiKey = 'AIzaSyDADL0htCYzVez7EnpEvVmFp0N-BOKlSSQ';
     
-    if (!apiKey) {
-        // Prompt user for API key on first visit
-        apiKey = prompt('Please enter your Gemini API key for development:');
-        if (apiKey) {
-            localStorage.setItem('GEMINI_API_KEY', apiKey);
-        }
-    }
-    
-    if (apiKey) {
-        window.GEMINI_API_KEY = apiKey;
+    if (apiKey && window.setApiKey) {
+        window.setApiKey(apiKey);
+        console.log('API key loaded successfully');
+    } else {
+        console.error('Failed to load API key');
     }
 }
 
-// Auto-load in development
-if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+// Load the configuration when the page loads
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadDevelopmentConfig);
+} else {
     loadDevelopmentConfig();
 }
-
-// For production, the API key should be set via build process or server-side

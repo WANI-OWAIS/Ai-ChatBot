@@ -1,6 +1,9 @@
 # Environment variables
 .env
 
+# Don't ignore production config (needed for GitHub Pages)
+# config.production.js
+
 # Node modules (if you add npm later)
 node_modules/
 
